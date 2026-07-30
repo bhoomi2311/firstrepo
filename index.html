@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Page</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .profile-card {
+      background: #fff;
+      width: 360px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .cover {
+      height: 140px;
+      background: linear-gradient(90deg, #2563eb, #9333ea);
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      margin-top: -60px;
+      object-fit: cover;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    h2 {
+      color: #222;
+      margin-top: 10px;
+    }
+
+    .title {
+      color: #666;
+      margin: 8px 0;
+    }
+
+    .bio {
+      color: #555;
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+
+    .stats div h3 {
+      color: #2563eb;
+    }
+
+    .stats div p {
+      font-size: 13px;
+      color: #666;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .follow {
+      background: #2563eb;
+      color: white;
+    }
+
+    .follow:hover {
+      background: #1d4ed8;
+    }
+
+    .message {
+      background: #e5e7eb;
+      color: #333;
+    }
+
+    .message:hover {
+      background: #d1d5db;
+    }
+
+    @media (max-width: 400px) {
+      .profile-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="profile-card">
+    <div class="cover"></div>
+
+    <img
+      src="https://via.placeholder.com/120"
+      alt="Profile Picture"
+      class="profile-img"
+    >
+
+    <div class="content">
+      <h2>John Doe</h2>
+      <p class="title">Web Developer</p>
+
+      <p class="bio">
+        Passionate about creating modern websites and web applications.
+        Love coding, learning new technologies, and solving problems.
+      </p>
+
+      <div class="stats">
+        <div>
+          <h3>120</h3>
+          <p>Posts</p>
+        </div>
+
+        <div>
+          <h3>5.8K</h3>
+          <p>Followers</p>
+        </div>
+
+        <div>
+          <h3>320</h3>
+          <p>Following</p>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="follow">Follow</button>
+        <button class="message">Message</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
